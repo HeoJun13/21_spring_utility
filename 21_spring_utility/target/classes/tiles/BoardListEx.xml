@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+				
+				<definition name="boardList" 	   template="/WEB-INF/views/tiles/layout/layout.jsp">		
+			 		<put-attribute name="header" value="/WEB-INF/views/tiles/layout/header.jsp"/>	
+			 		<put-attribute name="side" value="/WEB-INF/views/tiles/layout/side.jsp"/>	
+			 		<put-attribute name="footer" value="/WEB-INF/views/tiles/layout/footer.jsp"/> 	
+			 	</definition>
+			 	
+			 	<definition name="/bList"  extends="boardList">	
+			 		<put-attribute name="content" value="/WEB-INF/views/tiles/boardPractice/bList.jsp"/>	
+			 		<put-attribute name="title" value="bList"/>	
+			 	</definition>
+			 	
+			 	<definition name="/bUpdate"  extends="boardList">	
+			 		<put-attribute name="content" value="/WEB-INF/views/tiles/boardPractice/bUpdate.jsp"/>	
+			 		<put-attribute name="title" value="bUpdate"/>	
+			 	</definition>
+			 	
+			 	<definition name="/bDelete"  extends="boardList">	
+			 		<put-attribute name="content" value="/WEB-INF/views/tiles/boardPractice/bDelete.jsp"/>	
+			 		<put-attribute name="title" value="bDelete"/>	
+			 	</definition>
+		 	</tiles-definitions>

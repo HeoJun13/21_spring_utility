@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
-
+/*
 @Controller
 @RequestMapping("/file")
 public class filesController {
@@ -26,8 +26,8 @@ public class filesController {
 		return "file/filemain";
 		
 	}
-	
-	@PostMapping("/upload")
+/*	
+/*	@PostMapping("/upload")
 	@ResponseBody
 	public String upload(MultipartHttpServletRequest multipartRequest) throws IllegalStateException, IOException {
 		
@@ -63,3 +63,4 @@ public class filesController {
 	}
 
 }
+*/
